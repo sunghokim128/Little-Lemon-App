@@ -132,48 +132,6 @@ Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
 - User profile (name, email, phone, avatar) stored in AsyncStorage
 - Menu data stored in SQLite
 
-## 🧪 Testing
-
-To run tests (if implemented):
-```bash
-npm test
-```
-
-## 📦 Building for Production
-
-### iOS
-```bash
-expo build:ios
-```
-
-### Android
-```bash
-expo build:android
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Developer**: [Your Name]
-- **Design**: Little Lemon Restaurant
-- **API**: Meta Mobile Developer Program
-
-## 📞 Support
-
-For support or questions about the app:
-- Email: [your-email@example.com]
-- Restaurant: [restaurant-contact-info]
 
 ## 🔄 Version History
 
