@@ -1,169 +1,136 @@
 # Little Lemon Restaurant App
 
-A React Native mobile application for the Little Lemon Mediterranean restaurant, featuring menu browsing, user profiles, and a modern dining experience.
+A cross-platform React Native mobile application for Little Lemon, a family-owned Mediterranean restaurant. This app allows users to browse menu items, manage their profiles, and enjoy a seamless dining experience.
 
 ## 🍋 About
 
-Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist. This mobile app provides customers with an intuitive way to browse the menu, manage their profile, and explore the restaurant's offerings.
+Little Lemon specializes in traditional Mediterranean recipes served with a modern twist. This mobile app provides customers with a smooth, responsive interface to explore the menu, manage their personal data, and access restaurant features—all with or without internet access.
 
 ## ✨ Features
 
 ### 🏠 Home Screen
-- **Menu Display**: Browse restaurant menu items organized by categories (Starters, Mains, Desserts)
-- **Search Functionality**: Real-time search with 500ms debouncing for optimal performance
-- **Category Filtering**: Filter menu items by category with visual feedback
-- **Database Integration**: SQLite local storage for offline menu access
-- **API Integration**: Fetches menu data from external API on first load
-- **Responsive Design**: Optimized layout with proper keyboard handling
+- Browse menu items grouped by categories: Starters, Mains, Desserts
+- Real-time search with 500ms debouncing
+- Filter menu items by category with visual selection feedback
+- Local caching using SQLite for offline access
+- First-time fetch from remote API
+- Clean layout with responsive design
 
 ### 👤 Profile Management
-- **Avatar Management**: Upload and change profile pictures using device photo library
-- **Personal Information**: Edit name, email, and phone number
-- **Data Persistence**: All profile data saved locally using AsyncStorage
-- **Form Validation**: Real-time validation for required fields
-- **Phone Number Formatting**: Automatic US phone number formatting with mask
+- Upload/change profile avatar using device image picker
+- Edit name, email, and phone number with live validation
+- Automatic US phone number formatting with input mask
+- Data persistence via AsyncStorage
 
-### 🔐 User Authentication
-- **Onboarding Flow**: Simple registration with first name and email
-- **Input Validation**: Real-time validation with visual feedback
-- **Automatic Login**: Seamless transition between screens based on login status
-- **Logout Functionality**: Clear all user data and return to onboarding
+### 🔐 Onboarding & Authentication
+- Lightweight onboarding flow with name and email input
+- Real-time form validation with feedback
+- Auto-login and logout functionality using local flags
 
 ### 🎨 Design & UX
-- **Consistent Theme**: Unified color scheme throughout the app
-- **Modern UI**: Clean, intuitive interface using React Native Paper
-- **Keyboard Handling**: Proper keyboard avoidance and dismissal
-- **Loading States**: Visual feedback during data loading
-- **Error Handling**: Graceful error handling with user-friendly messages
+- Unified color theme with React Native Paper
+- Optimized keyboard handling and screen transitions
+- Graceful error handling and loading indicators
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-- **React Native**: Cross-platform mobile development
-- **Expo**: Development platform and tools
-- **SQLite**: Local database for menu storage
-- **AsyncStorage**: Local data persistence for user information
-- **React Navigation**: Screen navigation and routing
-- **React Native Paper**: Material Design components
-- **Expo Image Picker**: Image selection for profile avatars
-- **React Native Mask Input**: Input formatting for phone numbers
+| Tool | Purpose |
+|------|---------|
+| React Native | Cross-platform app development |
+| Expo SDK | App runtime and development tooling |
+| SQLite (via expo-sqlite) | Local database for menu items |
+| AsyncStorage | Persistent local storage (profile info) |
+| React Navigation | Navigation between screens |
+| React Native Paper | Material Design components |
+| Expo Image Picker | Avatar photo selection from gallery |
+| react-native-mask-input | Phone number formatting |
 
-## 📱 Screenshots
+## 🖼️ Screens Overview
 
-### Home Screen
-- Restaurant header with logo and profile navigation
-- Introduction section with restaurant description
-- Search bar with debounced input
-- Category filter buttons
-- Menu items displayed in grouped sections
+### ✅ Home Screen
+- Restaurant header
+- Search bar
+- Menu sections grouped by category
 
-### Profile Screen
-- Avatar display with change/remove options
-- Personal information form
-- Phone number input with formatting
-- Save/Discard/Logout action buttons
+### ✅ Profile Screen
+- Avatar selection
+- Form with validation for personal info
+- Logout and save options
 
-### Onboarding Screen
-- App branding and welcome message
-- First name and email input fields
-- Real-time validation feedback
-- Login button with conditional styling
+### ✅ Onboarding Screen
+- First-time setup for name/email
+- Navigation into main app after login
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
 ### Prerequisites
-
-- Node.js (v14 or higher)
+- Node.js v16+
 - npm or yarn
-- Expo CLI
-- iOS Simulator (for iOS development) or Android Emulator (for Android development)
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator or Android Emulator
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd LittleLemon
-   ```
+```bash
+# 1. Clone the repo
+git clone <repository-url>
+cd LittleLemon
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+# 2. Install dependencies
+npm install
+# or
+yarn install
 
-3. **Start the development server**
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+# 3. Run the app
+npx expo start
+```
 
-4. **Run on device/simulator**
-   ```bash
-   # For iOS
-   npm run ios
-   
-   # For Android
-   npm run android
-   
-   # For web
-   npm run web
-   ```
-
-## 📁 Project Structure
+## 📦 Project Structure
 
 ```
 LittleLemon/
-├── App.js                 # Main app component with navigation
+├── App.js                  # App entry and navigation container
 ├── screens/
-│   ├── Home.js           # Main menu display screen
-│   ├── Profile.js        # User profile management
-│   ├── Onboarding.js     # User registration/login
-│   └── Splash.js         # Loading screen
-├── database.js           # SQLite database operations
-├── assets/               # Images and static assets
-└── package.json          # Dependencies and scripts
+│   ├── Home.js             # Menu display
+│   ├── Profile.js          # Profile management
+│   ├── Onboarding.js       # First-time user flow
+│   └── Splash.js           # Initial loading screen
+├── database.js             # SQLite logic for menu
+├── assets/                 # Static images (logo, food, etc.)
+└── package.json            # Dependencies and scripts
 ```
 
-## 🔧 Configuration
+## 🗃️ Local Database Schema
 
-### Environment Setup
+**Table: menuitems**
 
-The app uses the following external services:
-- **Menu API**: Fetches menu data from Meta's sample API
-- **Image Storage**: Uses device's photo library for avatars
+| Field | Type | Description |
+|-------|------|-------------|
+| id | INTEGER | Primary key |
+| name | TEXT | Menu item name |
+| price | TEXT | Price of item |
+| description | TEXT | Item description |
+| image | TEXT | Image filename |
+| category | TEXT | starters / mains / desserts |
 
-### Database Schema
+## 🔍 Key Features Explained
 
-The SQLite database includes a `menuitems` table with the following structure:
-- `id`: Primary key
-- `name`: Menu item name
-- `price`: Item price
-- `description`: Item description
-- `image`: Image filename
-- `category`: Item category (starters, mains, desserts)
+### 🔎 Debounced Search
+- Implements a 500ms delay after typing to reduce load
+- Improves performance during fast typing
 
-## 🎯 Key Features Explained
+### 💾 Offline Access
+- Menu items fetched once from API and cached locally
+- Available even without an internet connection
 
-### Search with Debouncing
-The search functionality implements a 500ms debounce to prevent excessive database queries while the user is typing, ensuring smooth performance.
+### 🔄 Navigation Flow
+```
+Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
+```
 
-### Database Integration
-- **First Load**: Fetches menu data from external API and stores in SQLite
-- **Subsequent Loads**: Uses cached data from local database
-- **Offline Support**: Menu items available without internet connection
-
-### Navigation Flow
-1. **Splash Screen**: Shows while checking login status
-2. **Onboarding**: For new users or logged out users
-3. **Home Screen**: Main app interface for logged-in users
-4. **Profile Screen**: Accessible from home screen header
-
-### Data Persistence
-- **User Data**: Stored in AsyncStorage (first name, email, phone, avatar)
-- **Menu Data**: Stored in SQLite database
-- **Login State**: Managed through AsyncStorage flags
+### 📂 Data Persistence
+- User profile (name, email, phone, avatar) stored in AsyncStorage
+- Menu data stored in SQLite
 
 ## 🧪 Testing
 
@@ -218,4 +185,4 @@ For support or questions about the app:
 
 ---
 
-**Note**: This app is part of the Meta Mobile Developer Program curriculum and serves as a demonstration of React Native development best practices.
+**Note**: This app is part of the Meta Mobile Developer Program curriculum and serves as a demonstration of React Native development best practices. 
