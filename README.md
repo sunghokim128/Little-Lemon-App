@@ -15,8 +15,8 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 - Local caching using SQLite for offline access
 - First-time fetch from remote API
 - Clean layout with responsive design
-![IMG_7396](https://github.com/user-attachments/assets/8597dc08-3fa4-47de-b74b-aaaea0353cd9)
-![IMG_7397](https://github.com/user-attachments/assets/6b53838d-1cc8-4b0c-b618-1fe685ef798a)
+<img src="https://github.com/user-attachments/assets/8597dc08-3fa4-47de-b74b-aaaea0353cd9" style="width: 300px; height: auto;" />
+<img src="https://github.com/user-attachments/assets/6b53838d-1cc8-4b0c-b618-1fe685ef798a" style="width: 300px; height: auto;" />
 
 
 ### 👤 Profile Management
@@ -24,16 +24,16 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 - Edit name, email, and phone number with live validation
 - Automatic US phone number formatting with input mask
 - Data persistence via AsyncStorage
-![IMG_7398](https://github.com/user-attachments/assets/5e920041-fedf-4908-ba32-e70522cab426)
-![IMG_7399](https://github.com/user-attachments/assets/ed525050-595f-43b3-b7a0-e710851c34e1)
+<img src="https://github.com/user-attachments/assets/5e920041-fedf-4908-ba32-e70522cab426" style="width: 300px; height: auto;" />
+<img src="https://github.com/user-attachments/assets/ed525050-595f-43b3-b7a0-e710851c34e1" style="width: 300px; height: auto;" />
 
 
 ### 🔐 Onboarding & Authentication
 - Lightweight onboarding flow with name and email input
 - Real-time form validation with feedback
 - Auto-login and logout functionality using local flags
-![IMG_7394](https://github.com/user-attachments/assets/3f329ae8-37fc-407a-8ca7-5cff9a072a40)
-![IMG_7395](https://github.com/user-attachments/assets/92979da5-90b1-490d-a12f-fcc0bdd98a4a)
+<img src="https://github.com/user-attachments/assets/3f329ae8-37fc-407a-8ca7-5cff9a072a40" style="width: 300px; height: auto;" />
+<img src="https://github.com/user-attachments/assets/92979da5-90b1-490d-a12f-fcc0bdd98a4a" style="width: 300px; height: auto;" />
 
 ### 🔄 Navigation Flow
 ```
