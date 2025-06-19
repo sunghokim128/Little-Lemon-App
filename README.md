@@ -6,8 +6,11 @@
 
 
 ## 🍋 About
-This is a cross-platform React Native mobile application for Little Lemon, a family-owned Mediterranean restaurant. <br>
-This mobile app provides customers with a smooth, responsive interface to explore the menu, manage their personal data, and access restaurant features—all with or without internet access.
+This is a **Cross-platform React Native mobile app** as a practice assignment from <br>
+Coursera's Meta React Native Specialization Course <br>
+https://www.coursera.org/specializations/meta-react-native
+
+This app offers a smooth, responsive interface to explore the menu, manage personal data, and access restaurant features—**with or without internet access**
 
 <br>
 
