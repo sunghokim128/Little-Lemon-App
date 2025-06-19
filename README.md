@@ -8,6 +8,15 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 
 ## ✨ Features
 
+### 🔐 Onboarding & Authentication
+- Lightweight onboarding flow with name and email input
+- Real-time form validation with feedback
+- Auto-login and logout functionality using local flags
+<img src="https://github.com/user-attachments/assets/3f329ae8-37fc-407a-8ca7-5cff9a072a40" style="width: 300px; height: auto;" />
+<img src="https://github.com/user-attachments/assets/92979da5-90b1-490d-a12f-fcc0bdd98a4a" style="width: 300px; height: auto;" />
+<br>
+
+
 ### 🏠 Home Screen
 - Browse menu items grouped by categories: Starters, Mains, Desserts
 - Real-time search with 500ms debouncing
@@ -17,6 +26,7 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 - Clean layout with responsive design
 <img src="https://github.com/user-attachments/assets/8597dc08-3fa4-47de-b74b-aaaea0353cd9" style="width: 300px; height: auto;" />
 <img src="https://github.com/user-attachments/assets/6b53838d-1cc8-4b0c-b618-1fe685ef798a" style="width: 300px; height: auto;" />
+<br>
 
 
 ### 👤 Profile Management
@@ -26,25 +36,19 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 - Data persistence via AsyncStorage
 <img src="https://github.com/user-attachments/assets/5e920041-fedf-4908-ba32-e70522cab426" style="width: 300px; height: auto;" />
 <img src="https://github.com/user-attachments/assets/ed525050-595f-43b3-b7a0-e710851c34e1" style="width: 300px; height: auto;" />
+<br>
 
-
-### 🔐 Onboarding & Authentication
-- Lightweight onboarding flow with name and email input
-- Real-time form validation with feedback
-- Auto-login and logout functionality using local flags
-<img src="https://github.com/user-attachments/assets/3f329ae8-37fc-407a-8ca7-5cff9a072a40" style="width: 300px; height: auto;" />
-<img src="https://github.com/user-attachments/assets/92979da5-90b1-490d-a12f-fcc0bdd98a4a" style="width: 300px; height: auto;" />
 
 ### 🔄 Navigation Flow
 ```
 Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
 ```
 
+
 ### 📂 Data Persistence
 - User profile (name, email, phone, avatar) stored in AsyncStorage
 - Menu data stored in SQLite
 - Initial data fetched from https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json
-
 
 
 ## 🛠️ Tech Stack
@@ -60,6 +64,7 @@ Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
 | Expo Image Picker | Avatar photo selection from gallery |
 | react-native-mask-input | Phone number formatting |
 
+
 ## 📦 Project Structure
 
 ```
@@ -74,6 +79,7 @@ LittleLemon/
 ├── assets/                 # Static images (logo, food, etc.)
 └── package.json            # Dependencies and scripts
 ```
+
 
 ## 🗃️ Local Database Schema
 
@@ -96,6 +102,7 @@ LittleLemon/
 - npm or yarn
 - Expo CLI (`npm install -g expo-cli`)
 - iOS Simulator or Android Emulator
+
 
 ### Installation
 
