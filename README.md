@@ -15,22 +15,37 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 - Local caching using SQLite for offline access
 - First-time fetch from remote API
 - Clean layout with responsive design
+![IMG_7396](https://github.com/user-attachments/assets/8597dc08-3fa4-47de-b74b-aaaea0353cd9)
+![IMG_7397](https://github.com/user-attachments/assets/6b53838d-1cc8-4b0c-b618-1fe685ef798a)
+
 
 ### 👤 Profile Management
 - Upload/change profile avatar using device image picker
 - Edit name, email, and phone number with live validation
 - Automatic US phone number formatting with input mask
 - Data persistence via AsyncStorage
+![IMG_7398](https://github.com/user-attachments/assets/5e920041-fedf-4908-ba32-e70522cab426)
+![IMG_7399](https://github.com/user-attachments/assets/ed525050-595f-43b3-b7a0-e710851c34e1)
+
 
 ### 🔐 Onboarding & Authentication
 - Lightweight onboarding flow with name and email input
 - Real-time form validation with feedback
 - Auto-login and logout functionality using local flags
+![IMG_7394](https://github.com/user-attachments/assets/3f329ae8-37fc-407a-8ca7-5cff9a072a40)
+![IMG_7395](https://github.com/user-attachments/assets/92979da5-90b1-490d-a12f-fcc0bdd98a4a)
 
-### 🎨 Design & UX
-- Unified color theme with React Native Paper
-- Optimized keyboard handling and screen transitions
-- Graceful error handling and loading indicators
+### 🔄 Navigation Flow
+```
+Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
+```
+
+### 📂 Data Persistence
+- User profile (name, email, phone, avatar) stored in AsyncStorage
+- Menu data stored in SQLite
+- Initial data fetched from https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json
+
+
 
 ## 🛠️ Tech Stack
 
@@ -44,46 +59,6 @@ Little Lemon specializes in traditional Mediterranean recipes served with a mode
 | React Native Paper | Material Design components |
 | Expo Image Picker | Avatar photo selection from gallery |
 | react-native-mask-input | Phone number formatting |
-
-## 🖼️ Screens Overview
-
-### ✅ Home Screen
-- Restaurant header
-- Search bar
-- Menu sections grouped by category
-
-### ✅ Profile Screen
-- Avatar selection
-- Form with validation for personal info
-- Logout and save options
-
-### ✅ Onboarding Screen
-- First-time setup for name/email
-- Navigation into main app after login
-
-## ⚙️ Getting Started
-
-### Prerequisites
-- Node.js v16+
-- npm or yarn
-- Expo CLI (`npm install -g expo-cli`)
-- iOS Simulator or Android Emulator
-
-### Installation
-
-```bash
-# 1. Clone the repo
-git clone <repository-url>
-cd LittleLemon
-
-# 2. Install dependencies
-npm install
-# or
-yarn install
-
-# 3. Run the app
-npx expo start
-```
 
 ## 📦 Project Structure
 
@@ -113,34 +88,31 @@ LittleLemon/
 | image | TEXT | Image filename |
 | category | TEXT | starters / mains / desserts |
 
-## 🔍 Key Features Explained
 
-### 🔎 Debounced Search
-- Implements a 500ms delay after typing to reduce load
-- Improves performance during fast typing
+## ⚙️ Getting Started
 
-### 💾 Offline Access
-- Menu items fetched once from API and cached locally
-- Available even without an internet connection
+### Prerequisites
+- Node.js v16+
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator or Android Emulator
 
-### 🔄 Navigation Flow
+### Installation
+
+```bash
+# 1. Clone the repo
+git clone <repository-url>
+cd LittleLemon
+
+# 2. Install dependencies
+npm install
+# or
+yarn install
+
+# 3. Run the app
+npx expo start
 ```
-Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
-```
-
-### 📂 Data Persistence
-- User profile (name, email, phone, avatar) stored in AsyncStorage
-- Menu data stored in SQLite
-
-
-## 🔄 Version History
-
-- **v1.0.0**: Initial release with core functionality
-  - Menu browsing and search
-  - User profile management
-  - Onboarding flow
-  - Database integration
 
 ---
 
-**Note**: This app is part of the Meta Mobile Developer Program curriculum and serves as a demonstration of React Native development best practices. 
+**Note**: This app is part of the Meta React Native curriculum in Coursera and serves as a demonstration of mobile application development best practices. 
