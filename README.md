@@ -1,13 +1,12 @@
 # Little Lemon Restaurant App
-
-A cross-platform React Native mobile application for Little Lemon, a family-owned Mediterranean restaurant. <br>
-This app allows users to browse menu items, manage their profiles, and enjoy a seamless dining experience.
+<img src="https://github.com/user-attachments/assets/4f120240-41d9-40b8-a720-5dfb1dd4b772" style="width: 300px; height: auto;" />  
 
 <br>
+<br>
+
 
 ## 🍋 About
-
-Little Lemon specializes in traditional Mediterranean recipes served with a modern twist. <br>
+This is a cross-platform React Native mobile application for Little Lemon, a family-owned Mediterranean restaurant. <br>
 This mobile app provides customers with a smooth, responsive interface to explore the menu, manage their personal data, and access restaurant features—all with or without internet access.
 
 <br>
@@ -77,6 +76,7 @@ Splash Screen ➝ (If not onboarded) ➝ Onboarding ➝ Home ➝ Profile
 Source: Meta React Native Course
 
 <br>
+<br>
 
 
 ## 🛠️ Tech Stack
@@ -108,6 +108,7 @@ LittleLemon/
 ├── assets/                 # Static images (logo, food, etc.)
 └── package.json            # Dependencies and scripts
 ```
+<br>
 
 ## 🗃️ Local Database Schema
 
